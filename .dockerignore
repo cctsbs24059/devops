@@ -1,0 +1,6 @@
+.git
+_pycache_/
+*.py[codz]
+*$py.class
+
+db.sqlite3
