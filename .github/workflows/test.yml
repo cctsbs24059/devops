@@ -53,7 +53,7 @@ jobs:
       packages: write
     steps:
       - name: Checkout code
-        uses: actions/checkout@4
+        uses: actions/checkout@v4
 
       - name: Login to GHCR
         uses: docker/login-actions@v3
