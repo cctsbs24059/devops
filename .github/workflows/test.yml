@@ -58,7 +58,7 @@ jobs:
       - name: Login to GHCR
         uses: docker/login-actions@v3
         with:
-          registry: ${{ env.REGISTRY }}
+          registry: ghcr.io
           username: ${{ github.actor }}
           password: ${{ secrets.GITHUB_TOKEN }}
 
@@ -66,7 +66,7 @@ jobs:
          id: meta
          uses: docker/metadata-actions@v5
          with:
-           images: ${{ env.REGISTRY}}/${{ env.IMAGE_NAME }}
+           images: ghcr.io/cctsbs24059/devops
       - name: Build and push
         uses: docker/build-push-actions@v6
         with:
